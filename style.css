@@ -1,0 +1,168 @@
+html {
+  background: url("images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body
+ {
+  margin : 0 ;
+  font-family: 'Raleway', sans-serif;
+  color: #fefefe;
+  font-size: 1em;
+}
+
+h1, h2 {
+  margin:0;
+padding: 5px;
+font-family: 'Lobster Two', cursive;
+text-align: center;
+}
+
+h1{
+  font-size: 2.2em;
+  color:#fefefe;
+  text-shadow: 2px 2px 25px #BA3BA6;
+}
+
+h2{
+  font-size: 1.6em;
+  color: #fefefe;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+  color:#fefefe;
+}
+
+
+p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.container {
+  width:45%;
+  margin: 0 auto;
+}
+.container-2 {
+  width:90%;
+  margin: 0 auto;
+}
+
+.avatar{
+  width: 50%;
+}
+
+button {
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.3em;
+  font-weight: bolder;
+  display: flex;
+  background-color: rgba(0,0,0,0);
+  color: #fefefe;
+  border: 0.08em solid #fefefe;
+  padding: 14px 24px;
+  margin: 5px auto;
+  border-radius: 100px;
+}
+
+button:hover {
+  background-color: #BA3BA6;
+  color : #fefefe;
+  border: 0.08em solid #BA3BA6;
+}
+/*font-family: 'Lobster Two', cursive;*/
+
+.fab {
+    font-size: 1.2em;
+    padding: 0 8px;
+}
+
+.fab:hover {
+  color: #BA3BA6;
+}
+
+.card {
+  width: 100%;
+  padding: 16px;
+  margin: 20px;
+  background-color: rgba(0,0,0,0.3);
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
+  border-radius: 0 50px 0 50px;
+  transition: all 1s ease-out 0s;
+}
+
+.card:hover {
+
+  background-color: rgba(0,0,0,0.8);
+  transition: all 4s ease-in 0s;
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*------------------responsive-----------------------------------*/
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container-2 {
+    width: 100%;
+  }
+
+.card{
+  padding: 10px;
+  margin: 10px;
+}
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 60%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 90%;
+  }
+}
+
+/*.item {
+  flex-grow: 1;
+}*/
+
+
